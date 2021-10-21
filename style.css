@@ -1,0 +1,52 @@
+* {
+    font-family: 'rubik', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.homeButton {
+    float: left;
+}
+
+.homeButton_text {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px;
+    padding: 5px;   
+}
+
+.homeButton_text:visited {
+    color: black;
+}
+
+.mediaLinks_list {
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.mediaLinks_listItem {
+    display: inline-block;
+    margin: 5px;
+    text-align: right;
+}
+
+.photoFrame {
+    display: inline-block;
+    height: 350px;
+    width: 300px;
+}
+
+.photo {
+    /* object-fit: contain; */
+}
