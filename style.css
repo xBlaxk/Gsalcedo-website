@@ -1,3 +1,4 @@
+/* GENERAL STYLES */
 * {
     font-family: 'rubik', sans-serif;
     text-decoration: none;
@@ -12,8 +13,28 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    box-shadow: 0 0 20px black ;
 }
 
+h2, p {
+    text-align: center;
+}
+
+.text {
+    margin: 40px;
+    width: 50%;
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* SPECIFIC STYLES */
+/* HEADER */
 .homeButton {
     float: left;
 }
@@ -41,12 +62,39 @@ header {
     text-align: right;
 }
 
-.photoFrame {
-    display: inline-block;
+/* SECTION-1 [INTRODUCTION] */
+.introduction__photo-frame {
     height: 350px;
     width: 300px;
+    margin: 40px;
+    box-shadow: 0 0 10px 0 black, 0 0 10px 0 black;
 }
 
-.photo {
-    /* object-fit: contain; */
+.introduction__photo {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
 }
+
+.introduction__text {
+    margin: 20px;
+}
+
+.programmingLanguages {
+    display: block;
+}
+
+.programmingLanguages__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.programmingLanguages__logo {
+    object-fit: contain;
+    margin: 30px;
+    max-width: 5%;
+}
+
+
