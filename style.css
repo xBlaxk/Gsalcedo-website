@@ -4,25 +4,30 @@
     text-decoration: none;
 }
 
-body {
+body, html {
     margin: 0;
 }
 
 header {
-    background: bisque;
+    background: #16171D;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     box-shadow: 0 0 20px black ;
 }
 
-h2, p {
+h2, p, a {
     text-align: center;
+    justify-content: center;
 }
 
 .text {
+    background: #16171db6;
+    color: white;
+    max-width: 40%;
     margin: 40px;
-    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .sections {
@@ -30,71 +35,116 @@ h2, p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: auto;
+}
+
+.picture {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.picture-frame {
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    margin: 40px;
 }
 
 
 /* SPECIFIC STYLES */
 /* HEADER */
-.homeButton {
-    float: left;
+.homeButton_logo {
+    margin-right: 5px;
+    height: 50px;
+    object-fit: cover;
 }
-
-.homeButton_text {
-    display: inline-block;
+.homeButton_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
     font-size: 30px;
+    color: white;
     margin: 10px;
     padding: 5px;   
 }
 
 .homeButton_text:visited {
-    color: black;
+    color: white;
 }
 
+.mediaLinks {
+    margin-left: auto;
+    margin-right: 20px;
+}
 .mediaLinks_list {
     list-style-type: none;
-    margin-left: auto;
+    
 }
 
 .mediaLinks_listItem {
     display: inline-block;
     margin: 5px;
     text-align: right;
+    text-justify: auto;
+    color: white; 
+    height: auto;
+}
+
+.mediaLinks_link {
+    padding: 10px;
+    color: white;
+}
+.mediaLinks_link:visited {
+    color: white;
+
+}
+
+.mediaLinks_link:hover {
+    background: #282a35;
 }
 
 /* SECTION-1 [INTRODUCTION] */
-.introduction__photo-frame {
-    height: 350px;
-    width: 300px;
-    margin: 40px;
-    box-shadow: 0 0 10px 0 black, 0 0 10px 0 black;
+.introduction {
+    background-image: url('img/background_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.introduction__photo {
-    height: 350px;
-    width: 300px;
-    object-fit: cover;
+/* SECTION-2 ABOUTME */
+.aboutMe {
+    background-color: aqua;
 }
 
-.introduction__text {
-    margin: 20px;
-}
-
+/* SECTION-3 [PROGRAMMING LANGUAGES] */
 .programmingLanguages {
-    display: block;
+    display: inline;
+    background-color: blueviolet;
 }
 
-.programmingLanguages__gallery {
+.programmingLanguages_gallery {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 }
 
-.programmingLanguages__logo {
+.programmingLanguages_logo {
     object-fit: contain;
     margin: 30px;
-    max-width: 5%;
+    max-width: 10%;
 }
 
+/* SECTION-4 [COURSES] */
+.courses {
+    display: block;
+}
+
+/* SECTION-5 [CONTACTME] */
+.contactMe-form {
+    display: flex;
+}
 

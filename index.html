@@ -11,36 +11,40 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5c0526738d.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div class="homeButton">
-                <a class="homeButton_text" href="index.html">Gustavo Salcedo</a>
+                <a class="homeButton_link" href="index.html">
+                    <img class="homeButton_logo" src="img/blaxk-logo.png">
+                    <span class="home">GSalcedo</span>
+                </a>
             </div>
             <div class="mediaLinks">
                 <ul class="mediaLinks_list">
-                    <li class="mediaLinks_listItem"><a href="https://twitter.com/BlaxkMaster">Twitter</a></li>
-                    <li class="mediaLinks_listItem"><a href="https://github.com/xBlaxk">Github</a></li>
-                    <li class="mediaLinks_listItem"><a href="https://www.twitch.tv/blaxkmaster">Twitch</a></li>
-                    <li class="mediaLinks_listItem"><a href="https://www.youtube.com/channel/UCBRDqTL2PykQgwqgpJfZzig">Youtube</a></li>
+                    <li class="mediaLinks_listItem"><a class="mediaLinks_link" href="https://twitter.com/BlaxkMaster"><i class="fab fa-twitter"></i></a></li>
+                    <li class="mediaLinks_listItem"><a class="mediaLinks_link" href="https://github.com/xBlaxk"><i class="fab fa-github"></i></a></li>
+                    <li class="mediaLinks_listItem"><a class="mediaLinks_link" href="https://www.twitch.tv/blaxkmaster"><i class="fab fa-twitch"></i></a></li>
+                    <li class="mediaLinks_listItem"><a class="mediaLinks_link" href="https://www.youtube.com/channel/UCBRDqTL2PykQgwqgpJfZzig"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
         </header>
         <div class="introduction sections">
-            <div class="introduction__photo-frame">
-                <img class="introduction__photo " src="img/Gustavo-photo.png">
+            <div class="introduction_pic-frame picture-frame">
+                <img class="introduction_pic picture" src="img/Gustavo-pic.png">
             </div>
-            <div class="introduction__text text">
-                <h2>Hi, my name is Gustavo Salcedo</h2>
-                <p class="introduction__message">
-                    I am a systems engineer
+            <div class="introduction_text text">
+                <h2>Hi, I'm Gustavo Salcedo</h2>
+                <p class="introduction_message">
+                    welcome to my portfolio, feel like you were in home.
                 </p>
             </div>
         </div>
         <div class="aboutMe sections">
-            <div class="aboutMe__text text">
+            <div class="aboutMe_text text">
                 <h2>ABOUT ME</h2>
-                <p class="aboutMe__message">
+                <p class="aboutMe_message">
                     Systems engineer student in Colombia, love almost everything about technology like video games,
                     code writing, and video editing.
                     In the future I would like to work as a front-end developer, UI/UX developer, desktop developer, or in
@@ -48,27 +52,43 @@
                     acquire new knowledge, skills and apply them in my workflow as a whole.
                 </p>
             </div>
-            <img class="introduction__photo" src="img/Gustavo-photo.png">
+            <div class="aboutMe_pic-frame picture-frame">
+                <img class="aboutMe_pic picture" src="img/casual-pic.png">
+            </div>
         </div>
         <div class="programmingLanguages sections">
             <h2>PROGRAMMING LANGUAGES</h2>
-            <div class="programmingLanguages__gallery">
-                <img class="programmingLanguages__logo" src="img/html_logo.png">
-                <img class="programmingLanguages__logo" src="img/css_logo.png">
-                <img class="programmingLanguages__logo" src="img/js_logo.png">
-                <img class="programmingLanguages__logo" src="img/nodejs_logo.png">
-                <img class="programmingLanguages__logo" src="img/c_logo.png">
-                <img class="programmingLanguages__logo" src="img/cpp_logo.png">
-                <img class="programmingLanguages__logo" src="img/cshaft_logo.png">
-                <img class="programmingLanguages__logo" src="img/java_logo.png">
+            <div class="programmingLanguages_gallery">
+                <img class="programmingLanguages_logo" src="img/html_logo.png">
+                <img class="programmingLanguages_logo" src="img/css_logo.png">
+                <img class="programmingLanguages_logo" src="img/js_logo.png">
+                <img class="programmingLanguages_logo" src="img/nodejs_logo.png">
+                <img class="programmingLanguages_logo" src="img/c_logo.png">
+                <img class="programmingLanguages_logo" src="img/cpp_logo.png">
+                <img class="programmingLanguages_logo" src="img/cshaft_logo.png">
+                <img class="programmingLanguages_logo" src="img/java_logo.png">
             </div>
         </div>
         <div class="courses sections">
-            <img class="introduction__photo " src="img\Gustavo-photo.png">
+            <h2>COURSES</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
         <div class="contactMe sections">
-            FORM
-
+            <form class="contactMe_form">
+                <input class="contactMe_form-firstName" type="text" placeholder="First Name">
+                <input class="contactMe_form-lastName" type="text" placeholder="Last Name">
+                <input class="contactMe_form-eMail" type="email" placeholder="example@gmail.com">
+                <input class="contactMe_form-phonePrefix" type="number" placeholder="+1">
+                <input class="contactMe_form-phoneNumber" type="number" placeholder="Phone Number">
+                <input class="contactMe_form-message" type="text" placeholder="Message">
+            </form>
         </div>
     </body>
 </html>
