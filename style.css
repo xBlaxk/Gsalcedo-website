@@ -8,13 +8,17 @@ body, html {
     margin: 0;
 }
 
-header {
+header, nav {
     background: #16171D;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     box-shadow: 0 0 20px black ;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
+
 
 h2, p, a {
     text-align: center;
@@ -35,7 +39,7 @@ h2, p, a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: auto;
+    align-content: center;
 }
 
 .picture {
@@ -112,6 +116,8 @@ h2, p, a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100vh;
+    
 }
 
 /* SECTION-2 ABOUTME */
