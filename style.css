@@ -2,6 +2,7 @@
 * {
     font-family: 'rubik', sans-serif;
     text-decoration: none;
+    color: white;
 }
 
 body, html {
@@ -18,6 +19,7 @@ nav {
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 200;
 }
 
 
@@ -28,11 +30,10 @@ h2, p, a {
 
 .text {
     background: #16171db6;
-    color: white;
     max-width: 40%;
     margin: 40px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .sections {
@@ -41,14 +42,15 @@ h2, p, a {
     align-items: center;
     justify-content: center;
     align-content: center;
-    height: 70vh;
+    height: auto;
+    margin: 40px 0;
 }
 
 .picture {
     height: 350px;
     width: 300px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .picture-frame {
@@ -56,6 +58,14 @@ h2, p, a {
     width: 300px;
     border-radius: 20px;
     margin: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -77,13 +87,8 @@ h2, p, a {
     justify-content: center;
     font-weight: 600;
     font-size: 30px;
-    color: white;
     margin: 10px;
     padding: 5px;   
-}
-
-.homeButton_text:visited {
-    color: white;
 }
 
 .mediaLinks {
@@ -99,17 +104,11 @@ h2, p, a {
     display: inline-block;
     margin: 5px;
     text-align: right;
-    color: white; 
     height: auto;
 }
 
 .mediaLinks_link {
     padding: 10px;
-    color: white;
-}
-.mediaLinks_link:visited {
-    color: white;
-
 }
 
 .mediaLinks_link:hover {
@@ -122,54 +121,111 @@ h2, p, a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    
+    height: 90vh;
+    flex-direction: column;
+}
+
+/* MAIN CONTENT */
+.contentSection {
+    background: rgb(163,6,42);
+background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(30,20,166,1) 75%, rgba(10,10,10,1) 100%);
+    height: auto;
 }
 
 /* SECTION-2 ABOUTME */
-.aboutMe {
-    background-color: aqua;
-}
 
 /* SECTION-3 [PROGRAMMING LANGUAGES] */
 .programmingLanguages {
-    display: block;
-    background-color: blueviolet;
-    height: 70vh;
+    display: flex;
+    align-content: center;
+    height: auto;
+    width: 80vw;
+    margin: 40px 10vw;
+    background-color: #16171D;
+    border-radius: 20px;
 }
 
 .programmingLanguages_title {
-    display: inline-block;
     width: 100vw;
     margin: 40px;
 }
 
 .programmingLanguages_gallery {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    
     width: 80vw;
-
+    margin: 20px;
 }
 
 .programmingLanguages_logo {
     object-fit: contain;
     margin: 30px;
+    padding: 20px;
     max-width: 10%;
 }
 
 /* SECTION-4 [COURSES] */
+
 .courses {
-    display: block;
+    width: 90vw;
+    margin: 40px 5vw;
+}
+
+.course_link{
+    display: flex;
+    flex-direction: column;
+    max-width: 10%;
+    padding: 20px;
+    margin: 10px;
+    filter: grayscale(100%);
+    border-radius: 20px;
+    transition: 200ms;
+}
+
+.course_link:hover {
+    filter: grayscale(0%);
+    background-color: rgba(255, 255, 255, 0.308);
+}
+
+
+.course_linkName {
+    margin-top: 20px;
+    text-align: center;
+    font-size: larger;
 }
 
 /* SECTION-5 [CONTACTME] */
-.contactMe-form {
+.contactMe {
+    background-color: #282a35;
+    padding: 20px;
+    border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70vw;
+    margin: 40px 15vw;
 }
 
-/* SECTION-LAST [FOOTER]
+.contactMe_form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
+.contactMe_formField {
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
 
+/* SECTION-LAST [FOOTER] */
+footer {
+    display: flex;
+    background-color: #282a35;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+}
