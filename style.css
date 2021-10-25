@@ -47,8 +47,8 @@ h2, p, a {
 }
 
 .picture {
-    height: 350px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -121,14 +121,19 @@ h2, p, a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 90vh;
+    min-height: 90vh;
     flex-direction: column;
+}
+
+.introduction_picFrame {
+    height: 20vw;
+    width: 20vw;
 }
 
 /* MAIN CONTENT */
 .contentSection {
     background: rgb(163,6,42);
-background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(30,20,166,1) 75%, rgba(10,10,10,1) 100%);
+    background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(61,50,213,1) 60%, rgba(10,10,10,1) 100%);
     height: auto;
 }
 
