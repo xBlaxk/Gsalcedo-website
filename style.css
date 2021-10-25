@@ -129,7 +129,7 @@ h2, p, a {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 90vh;
-    width: 100vw;
+    width: 100%;
     margin: 40px 0vw;
     flex-direction: column;
 }
@@ -142,7 +142,7 @@ h2, p, a {
 /* MAIN CONTENT */
 .contentSection {
     background: rgb(163,6,42);
-background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(41,34,142,1) 64%, rgba(10,10,10,1) 100%);height: auto;
+    background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(41,34,142,1) 64%, rgba(10,10,10,1) 100%);height: auto;
 }
 
 /* SECTION-2 ABOUTME */
@@ -169,7 +169,6 @@ background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(41,34,142,1) 64%, rg
 }
 
 .programmingLanguages_gallery {
-    
     width: 80vw;
     margin: 20px;
 }
@@ -178,7 +177,7 @@ background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(41,34,142,1) 64%, rg
     object-fit: contain;
     margin: 30px;
     padding: 20px;
-    max-width: 10%;
+    width: 10%;
 }
 
 /* SECTION-4 [COURSES] */
@@ -210,7 +209,7 @@ background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(41,34,142,1) 64%, rg
 
 /* SECTION-5 [CONTACTME] */
 .contactMe {
-    background-color: #282a35;
+    background-color: #16171D;
     padding: 20px;
     border-radius: 20px;
     display: flex;
@@ -220,25 +219,37 @@ background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(41,34,142,1) 64%, rg
     flex-direction: column;
 }
 
-.contactMe_form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.contactMe_formField {
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+.fa-envelope {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
 }
 
 /* SECTION-LAST [FOOTER] */
 footer {
     display: flex;
-    background-color: #282a35;
-    height: 15vh;
+    background-color: #16171D;
+    height: 30vh;
     align-items: center;
     justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #030303;
+}
+
+::-webkit-scrollbar-thumb {
+    
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: rgb(88, 88, 88);
+    background-clip: content-box;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
