@@ -43,19 +43,20 @@ h2, p, a {
     justify-content: center;
     align-content: center;
     height: auto;
-    margin: 40px 0;
+    width: 50vw;
+    margin: 40px 25vw;
 }
 
 .picture {
-    height: 100%;
-    width: 100%;
+    height: 350px;
+    width: 300px;
     object-fit: cover;
     border-radius: 20px;
 }
 
 .picture-frame {
-    height: 350px;
-    width: 300px;
+    /* height: 350px;
+    width: 300px; */
     border-radius: 20px;
     margin: 40px;
 }
@@ -103,12 +104,18 @@ h2, p, a {
 .mediaLinks_listItem {
     display: inline-block;
     margin: 5px;
-    text-align: right;
     height: auto;
+    transition: 200ms;
+}
+
+.mediaLinks_listItem:hover {
+    transform: scale(1.2);
 }
 
 .mediaLinks_link {
     padding: 10px;
+    transition: 200ms;
+    border-radius: 10px;
 }
 
 .mediaLinks_link:hover {
@@ -122,30 +129,36 @@ h2, p, a {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 90vh;
+    width: 100vw;
+    margin: 40px 0vw;
     flex-direction: column;
 }
 
 .introduction_picFrame {
-    height: 20vw;
-    width: 20vw;
+    height: 350px;
+    width: 300px;
 }
 
 /* MAIN CONTENT */
 .contentSection {
     background: rgb(163,6,42);
-    background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(61,50,213,1) 60%, rgba(10,10,10,1) 100%);
-    height: auto;
+background: linear-gradient(0deg, rgba(163,6,42,1) 0%, rgba(41,34,142,1) 64%, rgba(10,10,10,1) 100%);height: auto;
 }
 
 /* SECTION-2 ABOUTME */
+.aboutMe {
+    flex-direction: row-reverse;
+}
+
+.aboutMe_text {
+    min-width: 0%;
+}
 
 /* SECTION-3 [PROGRAMMING LANGUAGES] */
 .programmingLanguages {
     display: flex;
     align-content: center;
     height: auto;
-    width: 80vw;
-    margin: 40px 10vw;
     background-color: #16171D;
     border-radius: 20px;
 }
@@ -170,15 +183,11 @@ h2, p, a {
 
 /* SECTION-4 [COURSES] */
 
-.courses {
-    width: 90vw;
-    margin: 40px 5vw;
-}
 
 .course_link{
     display: flex;
     flex-direction: column;
-    max-width: 10%;
+    max-width: 15%;
     padding: 20px;
     margin: 10px;
     filter: grayscale(100%);
@@ -189,6 +198,7 @@ h2, p, a {
 .course_link:hover {
     filter: grayscale(0%);
     background-color: rgba(255, 255, 255, 0.308);
+    transform: scale(1.1);
 }
 
 
@@ -208,8 +218,6 @@ h2, p, a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 70vw;
-    margin: 40px 15vw;
 }
 
 .contactMe_form {
