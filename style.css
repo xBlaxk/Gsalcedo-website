@@ -12,10 +12,9 @@ body, html {
 nav {
     background: #16171D;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     box-shadow: 0 0 20px black ;
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -31,9 +30,10 @@ h2, p, a {
 .text {
     background: #16171db6;
     max-width: 40%;
-    margin: 40px;
+    margin: 10px;
     padding: 20px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .sections {
@@ -43,8 +43,8 @@ h2, p, a {
     justify-content: center;
     align-content: center;
     height: auto;
-    width: 50vw;
-    margin: 40px 25vw;
+    width: 70%;
+    margin: 0px 15% 40px 15%;
 }
 
 .picture {
@@ -93,29 +93,24 @@ h2, p, a {
 }
 
 .mediaLinks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: 5%;
 }
-.mediaLinks_list {
-    list-style-type: none;
-    
-}
-
-.mediaLinks_listItem {
-    display: inline-block;
-    margin: 5px;
-    height: auto;
-    transition: 200ms;
-}
-
-.mediaLinks_listItem:hover {
-    transform: scale(1.2);
-}
 
 .mediaLinks_link {
+    margin: 10px 5px;
     padding: 10px;
     transition: 200ms;
     border-radius: 10px;
+}
+
+.mediaLinks_link:hover {
+    transform: scale(1.2);
 }
 
 .mediaLinks_link:hover {
@@ -128,16 +123,35 @@ h2, p, a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 90vh;
+    min-height: 92vh;
     width: 100%;
-    margin: 40px 0vw;
-    flex-direction: column;
+    margin: 0px 0% 40px 0%;
+    /* flex-direction: column; */
 }
 
 .introduction_picFrame {
-    height: 350px;
-    width: 300px;
+    min-height: 350px;
+    min-width: 300px;
 }
+
+.introduction_pic {
+    object-position: 50% top;
+}
+
+.introduction_text {
+    min-width: 300px;
+}
+.introduction_title {
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+.introduction_subtitle {
+    margin: 0;
+    font-style: italic;
+    font-weight: 100;
+}
+
 
 /* MAIN CONTENT */
 .contentSection {
@@ -151,7 +165,7 @@ h2, p, a {
 }
 
 .aboutMe_text {
-    min-width: 0%;
+    min-width: 300px;
 }
 
 /* SECTION-3 [PROGRAMMING LANGUAGES] */
@@ -164,29 +178,27 @@ h2, p, a {
 }
 
 .programmingLanguages_title {
-    width: 100vw;
+    width: 100%;
     margin: 40px;
 }
 
 .programmingLanguages_gallery {
-    width: 80vw;
+    width: 80%;
     margin: 20px;
 }
 
 .programmingLanguages_logo {
-    object-fit: contain;
+    object-fit: scale-down;
     margin: 30px;
-    padding: 20px;
-    width: 10%;
+    min-width: 0px;
+    max-width: 80px;
 }
 
 /* SECTION-4 [COURSES] */
-
-
 .course_link{
     display: flex;
     flex-direction: column;
-    max-width: 15%;
+    width: 150px;
     padding: 20px;
     margin: 10px;
     filter: grayscale(100%);
