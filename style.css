@@ -236,12 +236,6 @@ h2, p, a {
     flex-direction: column;
 }
 
-.fa-envelope {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-}
-
 /* SECTION-LAST [FOOTER] */
 footer {
     display: flex;
@@ -296,7 +290,7 @@ footer {
         min-width: 10%;
         max-width: 27%;
         margin: 0;
-        padding: 19px;
+        padding: 15px;
         filter: grayscale(100%);
         border-radius: 20px;
         transition: 200ms;
