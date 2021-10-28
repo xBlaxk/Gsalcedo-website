@@ -172,7 +172,6 @@ h2, p, a {
 .programmingLanguages {
     display: flex;
     align-content: center;
-    height: auto;
     background-color: #16171D;
     border-radius: 20px;
 }
@@ -184,14 +183,16 @@ h2, p, a {
 
 .programmingLanguages_gallery {
     width: 80%;
-    margin: 20px;
+    min-height: 150px;
+    max-height: 60vh;
+    margin: 0px 20px 20px 20px;
 }
 
 .programmingLanguages_logo {
-    object-fit: scale-down;
-    margin: 30px;
-    min-width: 0px;
-    max-width: 80px;
+    object-fit: contain;
+    margin: 15px;
+    min-width: 10%;
+    max-width: 15%;
 }
 
 /* SECTION-4 [COURSES] */
