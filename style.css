@@ -183,16 +183,15 @@ h2, p, a {
 
 .programmingLanguages_gallery {
     width: 80%;
-    min-height: 150px;
-    max-height: 60vh;
+    height: auto;
     margin: 0px 20px 20px 20px;
 }
 
 .programmingLanguages_logo {
     object-fit: contain;
-    margin: 15px;
-    min-width: 10%;
-    max-width: 15%;
+    margin: 30px;
+    min-width: 70px;
+    width: 10%;
 }
 
 /* SECTION-4 [COURSES] */
@@ -275,6 +274,11 @@ footer {
         border-radius: 20px;
         width: 90%;
         margin: 20px 5%;
+    }
+
+    .programmingLanguages_logo {
+        margin: 15px;
+        width: 15%;
     }
 
     .courses {
