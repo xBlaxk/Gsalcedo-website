@@ -27,11 +27,6 @@ h2, p, a {
     justify-content: center;
 }
 
-hr {
-    width: 100%;
-    opacity: 0.2;
-}
-
 .text {
     background: #16171db6;
     max-width: 40%;
@@ -52,12 +47,6 @@ hr {
     margin: 0px 15% 40px 15%;
 }
 
-.section_title {
-    width: 100%;
-    margin: 30px;
-    font-size: 35px;
-}
-
 .picture {
     height: 350px;
     width: 300px;
@@ -75,14 +64,11 @@ hr {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.logo {
-    object-fit: contain;
-    min-width: 70px;
-}
 
 /* SPECIFIC STYLES */
 /* HEADER */
@@ -186,7 +172,7 @@ hr {
 .programmingLanguages {
     display: flex;
     align-content: center;
-    background: #16171D;
+    background-color: #16171D;
     border-radius: 20px;
 }
 
@@ -226,7 +212,7 @@ hr {
 
 .course_link:hover {
     filter: grayscale(0%);
-    background: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
 
@@ -237,78 +223,22 @@ hr {
     
 }
 
-/* SECTION-5 [PERSONAL PROJECTS] */
-.personalProjects {
-    background: #16171D;
-    border-radius: 20px;
-    width: 90%;
-    margin: 0 5% 20px 5%;
-}
-
-.personalProject_title {
-    font-size: 25px;  
-    margin: 0px; 
-}
-
-.personalProjects_links {
-    display: flex;
-    margin: 20px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.personalProject_link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #3a3d4d;
-    margin: 20px;
+/* SECTION-5 [CONTACTME] */
+.contactMe {
+    background-color: #16171D;
     padding: 20px;
     border-radius: 20px;
-    width: 450px;
-    transition: 200ms;
-}
-
-.personalProject_link:hover {
-    position: relative;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.685);
-    transform: scale(1.02);
-}
-
-.personalProject_image {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    object-position: 0px top;
-    margin: 10px;
-    border-radius: 20px;
-}
-
-.personalProject_description {
-    margin: 0px;
-}
-
-.personalProject_usedTechlogies {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-}
-
-.usedTechnologies_title {
-    width: 100%;
-}
-
-.usedTechnologies_logo {
-    margin: 10px 10px;
-    width: 5%;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* SECTION-LAST [FOOTER] */
 footer {
     display: flex;
-    background: #16171D;
+    background-color: #16171D;
     height: 30vh;
     align-items: center;
     justify-content: center;
@@ -340,7 +270,7 @@ footer {
     .programmingLanguages {
         display: flex;
         align-content: center;
-        background: #16171D;
+        background-color: #16171D;
         border-radius: 20px;
         width: 90%;
         margin: 20px 5%;
@@ -374,9 +304,5 @@ footer {
     .course_linkName
     {
         font-size: 3vw;
-    }
-
-    .personalProject_description-text {
-        font-size: 2vw;
     }
 }
