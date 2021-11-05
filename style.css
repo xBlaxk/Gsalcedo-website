@@ -21,7 +21,6 @@ nav {
     z-index: 200;
 }
 
-
 h2, p, a {
     text-align: center;
     justify-content: center;
@@ -31,6 +30,8 @@ hr {
     width: 100%;
     opacity: 0.2;
 }
+
+
 
 .text {
     background: #16171db6;
@@ -85,6 +86,13 @@ hr {
 }
 
 /* SPECIFIC STYLES */
+
+/* fontasome styles */
+.fa-rotate-90 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+    filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+}
+
 /* HEADER */
 .homeButton {
     margin-left: 5%;
@@ -306,6 +314,7 @@ hr {
     width: 5%;
 }
 
+
 /* SECTION-LAST [FOOTER] */
 footer {
     display: flex;
@@ -314,6 +323,8 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -328,7 +339,7 @@ footer {
     border: 2px solid transparent;
     border-radius: 10px;
     background: rgb(88, 88, 88);
-    background-clip: content-box;
+    -webkit-background-clip: content-box;
   }
 
 ::-webkit-scrollbar-thumb:hover {
