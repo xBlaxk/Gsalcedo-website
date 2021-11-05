@@ -362,7 +362,7 @@ footer {
     }
 
     .course_link{
-        min-width: 10%;
+        min-width: 75px;
         max-width: 20%;
         margin: 0;
         padding: 15px;
