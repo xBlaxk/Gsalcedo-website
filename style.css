@@ -216,7 +216,8 @@ hr {
 .course_link{
     display: flex;
     flex-direction: column;
-    max-width: 12%;
+    min-width: 130px;
+    max-width: 10%;
     padding: 20px;
     margin: 10px;
     border-radius: 20px;
@@ -233,8 +234,7 @@ hr {
 .course_linkName {
     margin-top: 10px;
     text-align: center;
-    font-size: 1.2vw;
-    
+    font-size: 130%;
 }
 
 /* SECTION-5 [PERSONAL PROJECTS] */
@@ -363,7 +363,7 @@ footer {
 
     .course_link{
         min-width: 10%;
-        max-width: 27%;
+        max-width: 20%;
         margin: 0;
         padding: 15px;
         filter: grayscale(100%);
@@ -374,7 +374,7 @@ footer {
     
     .course_linkName
     {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .personalProject_description-text {
