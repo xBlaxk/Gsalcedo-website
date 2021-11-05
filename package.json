@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@hint/configuration-web-recommended": "^8.2.5",
+    "hint": "^6.1.8"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "web-recommended"
+    ],
+    "hints": {
+        "content-type": ["error", {
+            ".*\\.js": "text/html; charset=utf-8"
+        }],
+        "http-cache": ["error", {
+            "revvingPatterns": ["\\/\\d+\\/\\w+\\.\\w{1,3}"]
+        }]
+    }
+}
