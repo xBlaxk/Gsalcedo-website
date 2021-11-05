@@ -8,6 +8,7 @@
         }],
         "http-cache": ["error", {
             "revvingPatterns": ["\\/\\d+\\/\\w+\\.\\w{1,3}"]
-        }]
+        }],
+        "x-content-type-options": "error"
     }
 }
